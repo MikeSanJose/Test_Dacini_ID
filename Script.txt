@@ -1,0 +1,62 @@
+#!/bin/bash
+#Michael San Jose
+
+#This script takes three fasta files one which contains reference database, second with sequences of interest and thrid downloaded fasta file from genebank 
+
+FILE=$1
+if test -f "$FILE"; then
+    echo "Database fasta $FILE exist"
+else
+    echo "Database fasta $FILE does not exist"
+fi
+
+FILE=$2
+if test -f "$FILE"; then
+    echo "Query fasta $FILE exist"
+else
+	echo "Database fasta $FILE does not exist"
+fi
+
+FILE=$3
+if test -f "$FILE"; then
+    echo "NCBI Database fasta $FILE exist"
+else
+	echo "NCBI Database fasta $FILE does not exist"
+fi
+
+makeblastdb -in $1 -dbtype nucl  -out $1_DB -title "$1_DB"
+makeblastdb -in $3 -dbtype nucl  -out $3_DB -title "$3_DB"
+
+blastn -task blastn -db $1_DB -query $2 -dust no -max_target_seqs 5 -outfmt "6 qseqid sseqid evalue pident " -out Local_DB_Seq_ID.txt -num_threads 7
+
+#We sort results from blast search
+sort -k1,1 -k4,4nr Seq_ID.txt | sort -u -k1,1 > Local_DB_top_hit_Seq_ID.txt
+# extract uncertain ID's based on percent identity less than 97%
+awk '$4 < 97' Local_DB_top_hit_Seq_ID.txt > Local_DB_uncertain_ID.txt
+awk '$4 < 97 {print $1}' Local_DB_top_hit_Seq_ID.txt > Local_DB_uncertain_ID_voucher.txt
+seqtk subseq $2 Local_DB_uncertain_ID_voucher.txt > Local_DB_uncertain_ID.fasta
+
+#Sequences with P-ID less than 97% are then Blastn against the downloaded NCBI database
+blastn -task blastn -db $3_DB -query Local_DB_uncertain_ID.fasta -dust no -max_target_seqs 5 -outfmt "6 qseqid sseqid evalue pident " -out NCBI_uncertain_Seq_ID.txt -num_threads 7
+
+sort -k1,1 -k4,4nr NCBI_uncertain_Seq_ID.txt | sort -u -k1,1 > NCBI_BLAST_uncertain_top_hit_Seq_ID.out
+awk '$4 < 97' NCBI_BLAST_uncertain_top_hit_Seq_ID.out > NCBI_BLAST_uncertain_Seq_ID.txt
+awk '$4 < 97 {print $1}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out > NCBI_Blast_uncertain_ID_voucher.txt
+awk '$4 < 97 {print $2}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out | sort | unique > NCBI_Blast_uncertain_ID_genebank_accessions.txt
+seqtk subseq $2 NCBI_Blast_uncertain_ID_voucher.txt > NCBI_Blast_uncertain_ID.fasta
+
+#Then we download Genebank fastas for all uncertain ID's from the NCBI database
+file="NCBI_Blast_uncertain_ID_genebank_accessions.txt"
+while read line; do 
+    ncbi-acc-download -m nucleotide --out /dev/stdout -F fasta $line >> NCBI_Blast_uncertain_genebank.fasta
+done < $file
+
+# extract all header information 
+grep -e ">" NCBI_Blast_uncertain_genebank.fasta | awk 'sub(/^>/, "")' > NCBI_Blast_uncertain_genebank_info.txt
+
+# Concatenate Dacini Database 
+cat $1 $2 > Phylogeny_seqs.fasta
+muscle -in Phylogeny_seqs.fasta -out Phylogeny_seqs_aligned.fasta
+iqtree -s Phylogeny_seqs_aligned.fasta -fast -m GTR 
+
+
