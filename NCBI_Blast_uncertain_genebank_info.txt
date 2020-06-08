@@ -1,18 +1,50 @@
-AJ242872.1 Ceratitis capitata complete mitochondrial genome
-JX515609.1 UNVERIFIED: Carpomya vesuviana isolate hashi1 cytochrome oxidase subunit I-like (COI) gene, partial sequence; mitochondrial
-KC192976.1 Thaumatomyia notata voucher NCSU:FLYTREE 176 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
-KF318604.1 Bactrocera invadens strain BIBU1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
-KF998644.1 Bactrocera dorsalis voucher DCHY5 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
-KP296150.1 Bactrocera zonata mitochondrion, complete genome
-KP402791.1 Ocyptamus cf. chapadensis GFGM-2015 voucher JSM3007 cytochrome oxidase subunit 1 (COI) gene, partial cds; mitochondrial
-KR262672.1 Silba adipata voucher YSUW00120815 cytochrome oxidase subunit 1 (COX1) gene, partial cds; mitochondrial
-KY428294.1 Anastrepha minuta isolate Amin671712 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
-KY436396.1 Ceratitis fasciventris mitochondrion, complete genome
-MG566056.1 Bactrocera limbifera isolate BL1 mitochondrion, complete genome
-MG683503.1 Bactrocera kandiensis isolate ms7322 cytochrome c oxidase subunit I (COI) gene, partial cds; mitochondrial
-MG687825.1 Bactrocera dorsalis clone KM_1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
-MH900079.1 Acrotaeniostola dissimilis isolate Kunming mitochondrion, complete genome
-MK277016.1 Drosophila torula voucher M09031 cytochrome c oxidase subunit I (COI) gene, partial cds; mitochondrial
-MK293875.1 Bactrocera biguttula mitochondrion, complete genome
-MK767294.1 Lonchaeidae sp. SG-BCISP-7533 cytochrome oxidase subunit 1 (COI) gene, partial cds; mitochondrial
-MN857172.1 Tephritis femoralis mitochondrion, complete genome
+AJ242872.1	Ceratitis capitata complete mitochondrial genome
+JX515609.1	UNVERIFIED: Carpomya vesuviana isolate hashi1 cytochrome oxidase subunit I-like (COI) gene, partial sequence; mitochondrial
+KC192976.1	Thaumatomyia notata voucher NCSU:FLYTREE 176 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KF318604.1	Bactrocera invadens strain BIBU1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+KF998644.1	Bactrocera dorsalis voucher DCHY5 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+KP296150.1	Bactrocera zonata mitochondrion, complete genome
+KP402791.1	Ocyptamus cf. chapadensis GFGM-2015 voucher JSM3007 cytochrome oxidase subunit 1 (COI) gene, partial cds; mitochondrial
+KR262672.1	Silba adipata voucher YSUW00120815 cytochrome oxidase subunit 1 (COX1) gene, partial cds; mitochondrial
+KY428294.1	Anastrepha minuta isolate Amin671712 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KY436396.1	Ceratitis fasciventris mitochondrion, complete genome
+MG566056.1	Bactrocera limbifera isolate BL1 mitochondrion, complete genome
+MG683503.1	Bactrocera kandiensis isolate ms7322 cytochrome c oxidase subunit I (COI) gene, partial cds; mitochondrial
+MG687825.1	Bactrocera dorsalis clone KM_1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+MH900079.1	Acrotaeniostola dissimilis isolate Kunming mitochondrion, complete genome
+MK277016.1	Drosophila torula voucher M09031 cytochrome c oxidase subunit I (COI) gene, partial cds; mitochondrial
+MK293875.1	Bactrocera biguttula mitochondrion, complete genome
+MK767294.1	Lonchaeidae sp. SG-BCISP-7533 cytochrome oxidase subunit 1 (COI) gene, partial cds; mitochondrial
+MN857172.1	Tephritis femoralis mitochondrion, complete genome
+AJ242872.1	Ceratitis capitata complete mitochondrial genome
+AY788421.1	Ceratitis cosyra cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+AY788424.1	Ceratitis ditissima cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+EF670588.1	Ceratitis cosyra isolate SH78 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+HQ677059.1	Anastrepha obliqua isolate S3P1H1I1 tRNA-Tyr gene, partial sequence; and cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+HQ677168.1	Rhagoletis cerasi isolate S18P2H1I1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+JN705075.1	Ceratitis ditissima isolate 030221-26 TNE13 cytochrome oxidase c subunit I (COI) gene, partial cds; mitochondrial
+JX515609.1	UNVERIFIED: Carpomya vesuviana isolate hashi1 cytochrome oxidase subunit I-like (COI) gene, partial sequence; mitochondrial
+JX913749.1	Lucilia cuprina strain DI213.1 mitochondrion, complete genome
+JX913754.1	Lucilia sericata strain DI246 mitochondrion, complete genome
+KC192976.1	Thaumatomyia notata voucher NCSU:FLYTREE 176 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KF318604.1	Bactrocera invadens strain BIBU1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+KF998644.1	Bactrocera dorsalis voucher DCHY5 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+KP296150.1	Bactrocera zonata mitochondrion, complete genome
+KP402791.1	Ocyptamus cf. chapadensis GFGM-2015 voucher JSM3007 cytochrome oxidase subunit 1 (COI) gene, partial cds; mitochondrial
+KR262672.1	Silba adipata voucher YSUW00120815 cytochrome oxidase subunit 1 (COX1) gene, partial cds; mitochondrial
+KY428265.1	Anastrepha distincta isolate Adis671588 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KY428269.1	Anastrepha fraterculus isolate Afra2006110 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KY428270.1	Anastrepha fraterculus isolate Afra745234 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KY428281.1	Anastrepha leptozona isolate Alep745231 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KY428294.1	Anastrepha minuta isolate Amin671712 cytochrome oxidase subunit 1 (CO1) gene, partial cds; mitochondrial
+KY436396.1	Ceratitis fasciventris mitochondrion, complete genome
+MG566056.1	Bactrocera limbifera isolate BL1 mitochondrion, complete genome
+MG683359.1	Bactrocera umbrosa isolate ms1004 cytochrome c oxidase subunit I (COI) gene, partial cds; mitochondrial
+MG683503.1	Bactrocera kandiensis isolate ms7322 cytochrome c oxidase subunit I (COI) gene, partial cds; mitochondrial
+MG687825.1	Bactrocera dorsalis clone KM_1 cytochrome oxidase subunit I (COI) gene, partial cds; mitochondrial
+MH900079.1	Acrotaeniostola dissimilis isolate Kunming mitochondrion, complete genome
+MK277016.1	Drosophila torula voucher M09031 cytochrome c oxidase subunit I (COI) gene, partial cds; mitochondrial
+MK293875.1	Bactrocera biguttula mitochondrion, complete genome
+MK767294.1	Lonchaeidae sp. SG-BCISP-7533 cytochrome oxidase subunit 1 (COI) gene, partial cds; mitochondrial
+MN857172.1	Tephritis femoralis mitochondrion, complete genome
+	
