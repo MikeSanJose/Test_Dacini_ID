@@ -28,11 +28,11 @@ This should install muscle, blast, seqtk, iqtree and ncbi-acc-download into your
 
 You will need to use software to visualize your phylogeny. We recommend Figtree (http://tree.bio.ed.ac.uk/software/figtree/)
 
-This markdown will show the step by step process of molecularly identify Dacini specimens using a highly curated local Dacini Database and downloaded NCBI database.
+This markdown will show the step by step process of how to molecularly identify Dacini specimens using a highly curated local Dacini Database and downloaded NCBI database.
 
-We have also included a script "Dacini_ID_pipeline.sh" which will do all the steps in one command 
+We have also included a script "Script.txt" which will do all the steps in one command 
 ```
-sh Dacini_ID_pipeline.sh Unique_haplotypes_COI_Dacini.fasta good_larvae_updated.fasta NCBI_ref_brachycera_COI.fasta
+sh Script.txt Unique_haplotypes_COI_Dacini.fasta good_larvae_updated.fasta NCBI_ref_brachycera_COI.fasta
 ```
 Dacini_ID_pipeline.sh contains script 
 database.fasta contains all sequences to be included in local database
