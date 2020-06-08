@@ -42,7 +42,7 @@ blastn -task blastn -db $3_DB -query Local_DB_uncertain_ID.fasta -dust no -max_t
 sort -k1,1 -k4,4nr NCBI_uncertain_Seq_ID.txt | sort -u -k1,1 > NCBI_BLAST_uncertain_top_hit_Seq_ID.out
 awk '$4 < 97' NCBI_BLAST_uncertain_top_hit_Seq_ID.out > NCBI_BLAST_uncertain_Seq_ID.txt
 awk '$4 < 97 {print $1}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out > NCBI_Blast_uncertain_ID_voucher.txt
-awk '$4 < 97 {print $2}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out | sort | unique > NCBI_Blast_uncertain_ID_genebank_accessions.txt
+awk '{print $2}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out | sort | uniq > NCBI_Blast_uncertain_ID_genebank_accessions.txt
 seqtk subseq $2 NCBI_Blast_uncertain_ID_voucher.txt > NCBI_Blast_uncertain_ID.fasta
 
 #Then we download Genebank fastas for all uncertain ID's from the NCBI database
