@@ -39,7 +39,7 @@ database.fasta contains all sequences to be included in local database
 sequence_of_interest.fasta contains all sequences we want to identify
 NCBI_ref_brachycera_COI.fasta contains all COI sequences of brachycera from genebank
 
-This script will out put several files. these are some of the important files for molecularly identifying sequences of interest.
+This script will out put several files. These are some of the important files for molecularly identifying sequences of interest.
 
 ```
 Local_DB_top_hit_Seq_ID.txt
@@ -79,7 +79,7 @@ BOLD is not as computer friendly as NCBI.
 
 You will need to copy and paste the fasta file `NCBI_Blast_uncertain_ID.fasta` onto (http://www.boldsystems.org/index.php/IDS_OpenIdEngine) to use the BOLD database.
 
-You will need to have an account and it will email you results for your search.
+You will also need to have an account to lookup large numbers of sequences but having an account will allow you to get email results for your search.
 
 With this information you can use these information to now molecularly identify your sequences. 
 
@@ -158,12 +158,12 @@ makeblastdb -in NCBI_ref_brachycera_COI.fasta -dbtype nucl  -out NCBI_ref_brachy
 
 alternative is to run them one at a time using web based blast
 
-Results from NCBI Blastn search should follow same steps as your highly curated local DB search 
+Processing results from NCBI Blastn search should follow same steps as your highly curated local DB search 
 ```
 sort -k1,1 -k4,4nr NCBI_uncertain_Seq_ID.txt | sort -u -k1,1 > NCBI_BLAST_uncertain_top_hit_Seq_ID.out
 awk '$4 < 97' NCBI_BLAST_uncertain_top_hit_Seq_ID.out > NCBI_BLAST_uncertain_Seq_ID.txt
 awk '$4 < 97 {print $1}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out > NCBI_Blast_uncertain_ID_voucher.txt
-awk '$4 < 97 {print $2}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out | sort | unique > NCBI_Blast_uncertain_ID_genebank_accessions.txt
+awk '{print $2}' NCBI_BLAST_uncertain_top_hit_Seq_ID.out | sort | unique > NCBI_Blast_uncertain_ID_genebank_accessions.txt
 seqtk subseq $2 NCBI_Blast_uncertain_ID_voucher.txt > NCBI_Blast_uncertain_ID.fasta
 ```
 
