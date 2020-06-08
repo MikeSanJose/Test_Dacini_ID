@@ -1,4 +1,4 @@
-# This document describes how to use the Dacini COI Database identify species identity using Maximum likelihood, BLASTn and Bold searches.
+# This document describes how to use the Dacini COI Database to identify species identity using Maximum likelihood, BLASTn and Bold searches.
 
 ## How to install programs
 
@@ -83,7 +83,7 @@ You will need to have an account and it will email you results for your search.
 
 With this information you can use these information to now molecularly identify your sequences. 
 
-## STEP by step process
+## Step by step process
 
 ## STEP ONE local blast searches
 
